@@ -1,0 +1,42 @@
+# === 基础框架 ===
+fastapi>=0.104.1
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+pydantic-settings>=2.0.0  # <--- 确保这一行存在
+python-dotenv>=1.0.0      # <--- 用于读取 .env
+
+# === Agent 核心 ===
+langchain>=0.1.0
+langchain-openai>=0.1.0  # 必须安装，用于调用 OpenAI 兼容接口
+langgraph>=0.0.60        # Agent 编排框架
+langchain-text-splitters>=0.0.1
+
+# === RAG 核心组件 ===
+chromadb==0.4.24
+FlagEmbedding>=1.2.2
+rank-bm25>=0.2.2
+jieba>=0.42.1
+numpy==1.26.4
+# 指定兼容的 transformers 版本
+transformers>=4.36.0,<5.0.0
+sentence-transformers>=2.2.2,<6.0.0
+huggingface-hub>=0.23.0,<1.0.0
+torch>=2.0.0
+
+# === 文档解析 ===
+PyPDF2>=3.0.1
+pdfplumber>=0.10.2
+rapidocr-pdf  # 替代 tesserocr，更易安装
+
+# === 数据与可视化 (用于 ToolUse) ===
+pandas>=2.0.0
+pyecharts>=2.0.0
+
+# === 前端 ===
+streamlit>=1.30.0
+streamlit-echarts>=0.4.0
+requests>=2.31.0
+
+# === 日志 ===
+loguru>=0.7.2
