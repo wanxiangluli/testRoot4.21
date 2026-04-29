@@ -59,7 +59,7 @@
 系统采用 **前后端分离** 架构，后端基于 LangGraph 状态机编排 Agent 流程。
 
 ### Agent 核心流程
-```mermaid
+
 graph LR
     A[User Input] --> B(Planner Node)
     B -- Need Tool --> C(Executor Node)
