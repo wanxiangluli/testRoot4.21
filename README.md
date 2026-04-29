@@ -163,17 +163,6 @@ enterprise_agent_assistant/
 
 ---
 
-## 💡 遇到的挑战与解决方案
-
-| 挑战 | 解决方案 |
-| :--- | :--- |
-| **模型依赖冲突** | 锁定 `transformers` 与 `FlagEmbedding` 版本，解决 `is_torch_fx_available` 报错。 |
-| **向量维度不匹配** | 切换 Embedding 模型时重建 ChromaDB 索引，解决 `InvalidDimensionException`。 |
-| **API 批量限制** | 针对百炼 Embedding API 的 Batch Size 限制 (25条/次)，实现自动分片处理。 |
-| **本地模型下载慢** | 放弃本地 Rerank 模型，全面转向阿里云百炼云端 API，实现全链路云端化。 |
-
----
-
 ## 🛣️ 未来规划
 
 - [ ] 引入流式输出 (Streaming Response)，提升首字响应速度。
@@ -181,9 +170,3 @@ enterprise_agent_assistant/
 - [ ] 增加多模态文档解析能力 (扫描件/图片)。
 - [ ] 使用 Redis/Mysql 持久化对话历史与 Agent 状态。
 
----
-
-## 📄 License
-
-MIT License
-```
