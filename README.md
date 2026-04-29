@@ -1,4 +1,3 @@
-```markdown
 # 🚀 Enterprise Agent Assistant
 
 <p align="center">
@@ -67,7 +66,6 @@ graph LR
     C --> D(Reflector Node)
     D -- Satisfied --> E[Final Answer]
     D -- Not Satisfied --> B
-```
 
 ### 技术栈
 - **LLM & Embedding**: 阿里云百炼 (Qwen-Plus, Text-Embedding-V2, Gonxiang-Rerank)
